@@ -27,8 +27,4 @@
  */
 - (CGFloat)getTimeDurationFromNum:(CGFloat)num;
 
-/**
- *  停止动画
- */
-- (void)stopRuning;
 @end

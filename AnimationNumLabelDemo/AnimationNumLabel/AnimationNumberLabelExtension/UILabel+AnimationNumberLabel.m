@@ -65,7 +65,4 @@
     
     
 }
-- (void)stopRuning {
-    
-}
 @end
