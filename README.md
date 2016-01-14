@@ -1,4 +1,4 @@
-# CarouselImageView
+# AnimationNumberLabel
 轮播图   
 
  * 将工程里面的AnimationNumberLabelExtension拖入自己的工程即可。
