@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XtI-Wd-7bY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--AnimationNumberLabel-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaI-8x-1T2">
+                                <rect key="frame" x="279" y="154" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqL-go-ab9">
+                                <rect key="frame" x="270" y="361" width="60" height="30"/>
+                                <state key="normal" title="点击开始"/>
+                                <connections>
+                                    <action selector="startAnimationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezZ-el-oCa"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入结束的数字" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOm-ls-YXy">
+                                <rect key="frame" x="220" y="296" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="q1D-1h-77f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入开始的数字" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JAs-ay-fwK">
+                                <rect key="frame" x="220" y="242" width="161" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="ffW-RG-cfl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZqL-go-ab9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ASM-Z0-EIe"/>
+                            <constraint firstItem="ZqL-go-ab9" firstAttribute="top" secondItem="XOm-ls-YXy" secondAttribute="bottom" constant="35" id="DHz-Xa-gNe"/>
+                            <constraint firstItem="JAs-ay-fwK" firstAttribute="top" secondItem="gaI-8x-1T2" secondAttribute="bottom" constant="67" id="KG0-Qn-DXl"/>
+                            <constraint firstItem="gaI-8x-1T2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="TsX-aY-hb9"/>
+                            <constraint firstItem="JAs-ay-fwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vkk-yi-4BQ"/>
+                            <constraint firstItem="XOm-ls-YXy" firstAttribute="top" secondItem="JAs-ay-fwK" secondAttribute="bottom" constant="24" id="iDL-3s-CSK"/>
+                            <constraint firstItem="XOm-ls-YXy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jC1-H4-k3f"/>
+                            <constraint firstItem="gaI-8x-1T2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lnh-81-qpn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AnimationNumberLabel" id="HUv-Xi-Z49"/>
+                    <connections>
+                        <outlet property="endNumTextField" destination="XOm-ls-YXy" id="CvF-GC-YuA"/>
+                        <outlet property="numberLabel" destination="gaI-8x-1T2" id="Our-zi-hgf"/>
+                        <outlet property="startNumTextField" destination="JAs-ay-fwK" id="G7D-IH-bzx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="350"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nxr-42-edd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XtI-Wd-7bY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="she-MH-L6R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jUO-YM-4bA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYg-IC-4iT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1010"/>
+        </scene>
+    </scenes>
+</document>
