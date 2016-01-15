@@ -1,5 +1,5 @@
 # AnimationNumberLabel
-轮播图   
+动态数字   
 
  * 将工程里面的AnimationNumberLabelExtension拖入自己的工程即可。
  * 效果如下：   
