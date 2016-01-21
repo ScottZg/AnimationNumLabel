@@ -13,8 +13,9 @@
 	* 然后直接使用UILabel的实例去调用：<code>- (void)animationFromNum:(CGFloat)fromNum toNum:(CGFloat)toNum andWithDuration:(CGFloat)time;</code>方法即可。
 
 * 详情可查看Demo。 
-	
-* 更新记录   
+
+------------------------------------------------------	
+* 更新记录1.0   
 	* 更新时间：2016年1月21日。
 	* 更新内容：添加了暂停的功能，只需要调用
 	<code>stopRunning</code>方法即可。
