@@ -23,8 +23,12 @@
     [super viewDidLoad];
     self.startNumTextField.delegate = self;
 }
+- (IBAction)stopRunAction:(id)sender {
+    [self.numberLabel stopRunning];
+}
 #pragma mark - Button Action
 - (IBAction)startAnimationAction:(id)sender {
+    [self.numberLabel stopRunning];
     [self.numberLabel animationFromNum:[self.startNumTextField.text floatValue] toNum:[self.endNumTextField.text floatValue] andWithDuration:[self.numberLabel getTimeDurationFromNum:fabs([self.endNumTextField.text floatValue]-[self.startNumTextField.text floatValue])]];
 }
 #pragma mark - UITextFieldDelegate

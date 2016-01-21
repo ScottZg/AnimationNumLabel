@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+//#import "UILabel_AnimationNumberLabel.h"
 @interface UILabel (AnimationNumberLabel)
+
+
+@property (nonatomic,strong)NSString *isRunning;   //YES,NO
 
 /**
  *  动态增加数字
@@ -27,4 +30,8 @@
  */
 - (CGFloat)getTimeDurationFromNum:(CGFloat)num;
 
+/**
+ *  停止运行
+ */
+- (void)stopRunning;
 @end

@@ -512,6 +512,7 @@
 				5630AEA81C4794C000040AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5630AEA91C4794C000040AED /* Build configuration list for PBXNativeTarget "AnimationNumLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +521,7 @@
 				5630AEAB1C4794C000040AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5630AEAC1C4794C000040AED /* Build configuration list for PBXNativeTarget "AnimationNumLabelUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +530,7 @@
 				5630AEAE1C4794C000040AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
